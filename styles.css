@@ -1,76 +1,62 @@
 /*  your css code here. If applicable */
-body{
-	margin: 0;
-	background: #fff;
-}
-
-.grid-container{
+#grid{
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, 100px);
-	gap: 10px;
+	grid-template-rows: repeat(5, 124px);
+	grid-template-columns: repeat(4, 242.5px);
+	grid-gap: 10px;
+	background-color: green;
 	padding: 10px;
-	background: green;
 }
 
-.item{
-	background: rgba(255, 255, 255, 0.1);
+#grid > div{
+	background-color: rgba(255, 255, 255, 0.1);
 	color: white;
 	font-size: 20px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	padding: 5px;
 	font-weight: bold;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 5px;
 	border: 2px solid white;
 }
 
-.item1{
-	grid-column: 1 / 5;
-	grid-row: 1 / 2;
+#grid > div:nth-child(1){
+	grid-column: span 4;
 }
 
-.item2{
-	grid-column: 1 / 2;
-	grid-row: 2 / 6;
+#grid > div:nth-child(2){
+	grid-column: span 3;
 }
 
-.item3{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
+#grid > div:nth-child(3){
+	grid-column: span 1;
 }
 
-.item4{
-	grid-column: 3 / 5;
-	grid-row: 2 / 3;
+#grid > div:nth-child(4){
+	grid-column: span 2;
 }
 
-.item5{
-	grid-column: 2 / 4;
-	grid-row: 3 / 4;
+#grid > div:nth-child(5){
+	grid-column: span 1;
 }
 
-.item6{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
+#grid > div:nth-child(6){
+	grid-column: span 2;
 }
 
-.item7{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
+#grid > div:nth-child(7){
+	grid-column: span 1;
 }
 
-.item8{
-	grid-column: 3 / 4;
-	grid-row: 4 / 5;
+#grid > div:nth-child(8){
+	grid-column: span 1;
 }
 
-.item9{
-	grid-column: 4 / 5;
-	grid-row: 4 / 5;
+#grid > div:nth-child(9){
+	grid-column: span 1;
 }
 
-.item10{
-	grid-column: 2 / 5;
-	grid-row: 5 / 6;
+#grid > div:nth-child(10){
+	grid-column: span 3;
 }
+
